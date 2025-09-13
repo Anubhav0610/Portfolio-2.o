@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anubhav's About Me</title>
+    <!-- Use Tailwind CSS for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        
+        /* Define the color scheme using CSS variables */
+        :root {
+            --bg-color: #0d1117;
+            --text-color: #c9d1d9;
+            --accent-green: #38a169;
+            --accent-green-dark: #277953;
+            --card-bg: #161b22;
+            --border-color: #21262d;
+            --heading-color: #48bb78;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            scroll-behavior: smooth;
+            /* New professional background pattern */
+            background: 
+                radial-gradient(circle at 100% 100%, #1a2228, transparent 40%),
+                radial-gradient(circle at 0% 0%, #1a2228, transparent 40%),
+                radial-gradient(circle at 50% 50%, #202b33, #0d1117 80%),
+                linear-gradient(135deg, rgba(56, 161, 105, 0.05) 25%, transparent 25%) -50px 0,
+                linear-gradient(225deg, rgba(56, 161, 105, 0.05) 25%, transparent 25%) -50px 0,
+                linear-gradient(315deg, rgba(56, 161, 105, 0.05) 25%, transparent 25%),
+                linear-gradient(45deg, rgba(56, 161, 105, 0.05) 25%, transparent 25%);
+            background-size: 100px 100px, 100px 100px, 100% 100%, 100px 100px, 100px 100px, 100px 100px, 100px 100px;
+            background-color: var(--bg-color);
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+    <div class="container mx-auto max-w-7xl">
+        <!-- Header with back button -->
+        <header class="flex items-center py-6">
+            <a href="index.html" class="flex items-center space-x-2 text-gray-400 hover:text-teal-400 transition-colors font-semibold">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                </svg>
+                <span>Back to Portfolio</span>
+            </a>
+            <h1 class="flex-1 text-center text-3xl md:text-4xl font-bold text-white">About Me</h1>
+            <div class="w-5 h-5"></div>
+        </header>
+
+        <!-- About Me Details Section -->
+        <section id="about-details" class="bg-card-bg p-6 md:p-10 rounded-2xl shadow-lg mb-8 md:mb-12 border border-border-color">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4 text-heading-color">Summary</h2>
+            <p class="text-gray-300 text-base md:text-lg mb-6">
+                I am a 3rd-year B.Tech student at GL Bajaj Institute of Technology and Management, specializing in data structures, algorithms, and front-end development with a strong foundation in problem-solving and project development demonstrated through project work and academic pursuits.
+            </p>
+            <h3 class="text-xl md:text-2xl font-bold mb-3 text-heading-color">Key Skills</h3>
+            <ul class="list-disc list-inside space-y-4 text-gray-300 text-base md:text-lg">
+                <li>
+                    Solved over 100+ DSA problems on LeetCode, building a strong foundation in data structures and algorithms.
+                </li>
+                <li>
+                    Skilled in Java, C, JavaScript, Python, and modern web technologies, including React.js, HTML, and CSS.
+                </li>
+                <li>
+                    Developed interactive projects such as the “Today I Learned” website and “SpendWell” finance management app, demonstrating practical problem-solving and collaboration skills.
+                </li>
+                <li>
+                    Passionate about learning new technologies and creating impactful web solutions.
+                </li>
+            </ul>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center py-8 mt-8 text-gray-500 text-sm">
+            <p>&copy; 2024 Anubhav Chaudhary. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
