@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anubhav Chaudhary | Portfolio</title>
-    <!-- Use Tailwind CSS for modern styling -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" xintegrity="sha512-Fo3rlrNjH5/E7hKZ8ee0i1LbafYHxA0/VQInsNltkbG7EppqU9xPAcIoO/ZeP5p0e82M1m/i/d/zG/9aJ6p4g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrNjH5/E7hKZ8ee0i1LbafYHxA0/VQInsNltkbG7EppqU9xPAcIoO/ZeP5p0e82M1m/i/d/zG/9aJ6p4g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
@@ -111,22 +110,10 @@
         .nav-link.active {
             color: var(--accent-green);
         }
-
-        /* Hero image animation */
-        .hero-img {
-            animation: float 6s ease-in-out infinite;
-        }
-
-        @keyframes float {
-            0% { transform: translateY(0); }
-            50% { transform: translateY(-15px); }
-            100% { transform: translateY(0); }
-        }
     </style>
 </head>
 <body class="p-4 md:p-8">
 
-    <!-- Navbar -->
     <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
         <div class="container mx-auto max-w-7xl px-4 py-4 flex justify-between items-center">
             <a href="#" class="flex items-center space-x-2">
@@ -141,12 +128,10 @@
                 <a href="#certifications" class="nav-link hover:text-accent-green transition-colors">Certifications</a>
                 <a href="#contact" class="nav-link hover:text-accent-green transition-colors">Contact</a>
             </div>
-            <!-- Mobile Menu Button -->
             <button id="hamburger" class="md:hidden text-gray-400 hover:text-accent-green transition-colors">
                 <i class="fas fa-bars text-xl"></i>
             </button>
         </div>
-        <!-- Mobile Menu Overlay -->
         <div id="nav-menu" class="fixed inset-0 bg-black bg-opacity-95 z-40 md:hidden hidden">
             <div class="flex flex-col items-center justify-center h-full space-y-6 text-gray-300 text-xl font-semibold">
                 <a href="#home" class="nav-link-mobile hover:text-accent-green transition-colors" onclick="toggleMenu()">Home</a>
@@ -161,9 +146,8 @@
     
     <div class="container mx-auto max-w-7xl mt-24">
 
-        <!-- Hero Section -->
-        <section id="home" class="flex flex-col lg:flex-row items-center justify-between text-center lg:text-left py-12 md:py-24 fade-in-up">
-            <div class="w-full lg:w-1/2 mb-8 lg:mb-0 lg:pr-12">
+        <section id="home" class="flex flex-col items-center justify-center text-center py-12 md:py-32 fade-in-up">
+            <div class="w-full max-w-3xl mb-8">
                 <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-4">
                     Hi, I'm <span class="gradient-text">Anubhav Chaudhary</span>
                 </h1>
@@ -173,17 +157,13 @@
                 <p class="text-base md:text-lg text-gray-400 mb-8">
                     I'm a B.Tech student and a passionate Front-End Developer with a strong foundation in data structures, algorithms, and web technologies. I love building impactful and innovative solutions.
                 </p>
-                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center lg:justify-start">
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
                     <a href="#certifications" class="border-2 border-accent-green text-accent-green hover:bg-accent-green hover:text-white font-semibold py-3 px-8 rounded-full transition-all duration-300">View Certifications</a>
                     <a href="#projects" class="border-2 border-accent-green text-accent-green hover:bg-accent-green hover:text-white font-semibold py-3 px-8 rounded-full transition-all duration-300">View Projects</a>
                 </div>
             </div>
-            <div class="w-full lg:w-1/2 flex justify-center lg:justify-end hero-img">
-                <img src="unnamed.png" alt="Anubhav Chaudhary" class="w-48 h-48 sm:w-64 sm:h-64 rounded-full border-4 border-accent-green shadow-xl">
-            </div>
         </section>
 
-        <!-- About Me Section -->
         <section id="about" class="bg-card-bg p-6 md:p-12 rounded-2xl shadow-lg mb-16 border border-border-color fade-in-up">
             <h2 class="text-3xl md:text-4xl font-bold mb-8 text-heading-color text-center">About Me</h2>
             <div class="text-center md:text-left">
@@ -194,7 +174,6 @@
             </div>
         </section>
 
-        <!-- Skills Section -->
         <section id="skills" class="p-6 md:p-12 rounded-2xl mb-16 fade-in-up">
             <h2 class="text-3xl md:text-4xl font-bold mb-8 text-heading-color text-center">Skills & Technologies</h2>
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
@@ -233,11 +212,9 @@
             </div>
         </section>
 
-        <!-- Projects Section -->
         <section id="projects" class="p-6 md:p-12 rounded-2xl mb-16 fade-in-up">
             <h2 class="text-3xl md:text-4xl font-bold mb-8 text-heading-color text-center">Featured Projects</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project 1 -->
                 <div class="project-card bg-card-bg p-8 rounded-2xl shadow-lg border border-border-color">
                     <h3 class="text-2xl font-bold text-white mb-2">Today I Learned</h3>
                     <p class="text-gray-400 mb-4">A web application for capturing and organizing daily knowledge. It's a personal blog-style project built to demonstrate proficiency in front-end development and state management with React.js.</p>
@@ -251,7 +228,6 @@
                         <i class="fas fa-arrow-right ml-2"></i>
                     </a>
                 </div>
-                <!-- Project 2 -->
                 <div class="project-card bg-card-bg p-8 rounded-2xl shadow-lg border border-border-color">
                     <h3 class="text-2xl font-bold text-white mb-2">Hellen Keller</h3>
                     <p class="text-gray-400 mb-4">A web application that translates sign language to text and text to sign language, bridging communication gaps using real-time camera input and machine learning.</p>
@@ -265,7 +241,6 @@
                         <i class="fas fa-arrow-right ml-2"></i>
                     </a>
                 </div>
-                <!-- Project 3 -->
                 <div class="project-card bg-card-bg p-8 rounded-2xl shadow-lg border border-border-color">
                     <h3 class="text-2xl font-bold text-white mb-2">SpendWell</h3>
                     <p class="text-gray-400 mb-4">An AI-powered finance coach and expense tracker designed to help individuals make better financial decisions. It offers personalized advice, budgeting tools, and proactive alerts using the Gemini API.</p>
@@ -282,7 +257,6 @@
             </div>
         </section>
 
-        <!-- Certifications Section -->
         <section id="certifications" class="p-6 md:p-12 rounded-2xl mb-16 fade-in-up">
             <h2 class="text-3xl md:text-4xl font-bold mb-8 text-heading-color text-center">Certifications</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -306,40 +280,49 @@
                     <h3 class="text-xl font-bold text-white mb-2">Java Certificate (HackerRank)</h3>
                     <a href="https://www.hackerrank.com/certificates/6e41a5cc0a04" target="_blank" class="text-accent-green hover:text-heading-color font-semibold transition-colors">View Credential &rarr;</a>
                 </div>
-                <!-- SQL Intermediate HackerRank -->
                 <div class="certificate-card bg-card-bg p-6 rounded-2xl shadow-lg border border-border-color flex flex-col items-center text-center">
                     <i class="fas fa-database text-4xl text-heading-color mb-4"></i>
                     <h3 class="text-xl font-bold text-white mb-2">SQL (Intermediate) Certificate</h3>
                     <a href="https://www.hackerrank.com/certificates/14cd46f8ad8b" target="_blank" class="text-accent-green hover:text-heading-color font-semibold transition-colors">View Credential &rarr;</a>
                 </div>
-                 <!-- Deloitte Data Analytics Certificate -->
-                <div class="certificate-card bg-card-bg p-6 rounded-2xl shadow-lg border border-border-color flex flex-col items-center text-center">
+                 <div class="certificate-card bg-card-bg p-6 rounded-2xl shadow-lg border border-border-color flex flex-col items-center text-center">
                     <i class="fas fa-chart-bar text-4xl text-heading-color mb-4"></i>
                     <h3 class="text-xl font-bold text-white mb-2">Deloitte Data Analytics Certificate</h3>
                     <a href="https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_68c85d6c1d3434a5ab3a5ba2_1758364767462_completion_certificate.pdf" target="_blank" class="text-accent-green hover:text-heading-color font-semibold transition-colors">View Credential &rarr;</a>
                 </div>
-                <!-- Deloitte Cyber Certificate -->
                 <div class="certificate-card bg-card-bg p-6 rounded-2xl shadow-lg border border-border-color flex flex-col items-center text-center">
                     <i class="fas fa-shield-alt text-4xl text-heading-color mb-4"></i>
                     <h3 class="text-xl font-bold text-white mb-2">Deloitte Cyber Completion Certificate</h3>
                     <a href="https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/E9pA6qsdbeyEkp3ti_9PBTqmSxAf6zZTseP_68c85d6c1d3434a5ab3a5ba2_1758350294493_completion_certificate.pdf" target="_blank" class="text-accent-green hover:text-heading-color font-semibold transition-colors">View Credential &rarr;</a>
                 </div>
-                <!-- Oracle AI Foundation Certificate -->
                 <div class="certificate-card bg-card-bg p-6 rounded-2xl shadow-lg border border-border-color flex flex-col items-center text-center">
                     <i class="fas fa-brain text-4xl text-heading-color mb-4"></i>
                     <h3 class="text-xl font-bold text-white mb-2">Oracle AI Foundations Associate</h3>
                     <a href="Oracle AI Foundation Certificate.pdf" target="_blank" class="text-accent-green hover:text-heading-color font-semibold transition-colors">View Credential &rarr;</a>
                 </div>
-                <!-- Oracle Cloud Infrastructure Certificate -->
                 <div class="certificate-card bg-card-bg p-6 rounded-2xl shadow-lg border border-border-color flex flex-col items-center text-center">
                     <i class="fas fa-cloud text-4xl text-heading-color mb-4"></i>
                     <h3 class="text-xl font-bold text-white mb-2">Oracle Cloud Infrastructure Associate</h3>
                     <a href="Oracle Cloud Infrastructure Certificate.pdf" target="_blank" class="text-accent-green hover:text-heading-color font-semibold transition-colors">View Credential &rarr;</a>
                 </div>
+                <div class="certificate-card bg-card-bg p-6 rounded-2xl shadow-lg border border-border-color flex flex-col items-center text-center">
+                    <i class="fas fa-network-wired text-4xl text-heading-color mb-4"></i>
+                    <h3 class="text-xl font-bold text-white mb-2">Cisco Certification</h3>
+                    <a href="https://www.credly.com/badges/c4f2c5e8-51e9-4fdd-a59f-0ccf2929469b/public_url" target="_blank" class="text-accent-green hover:text-heading-color font-semibold transition-colors">View Credential &rarr;</a>
+                </div>
+                <div class="certificate-card bg-card-bg p-6 rounded-2xl shadow-lg border border-border-color flex flex-col items-center text-center">
+                    <i class="fas fa-network-wired text-4xl text-heading-color mb-4"></i>
+                    <h3 class="text-xl font-bold text-white mb-2">Cisco Certification</h3>
+                    <a href="https://www.credly.com/badges/1b61a897-4a8f-423a-9fc1-bcc03bbe3a5a/public_url" target="_blank" class="text-accent-green hover:text-heading-color font-semibold transition-colors">View Credential &rarr;</a>
+                </div>
+                <div class="certificate-card bg-card-bg p-6 rounded-2xl shadow-lg border border-border-color flex flex-col items-center text-center">
+                    <i class="fas fa-network-wired text-4xl text-heading-color mb-4"></i>
+                    <h3 class="text-xl font-bold text-white mb-2">Cisco Certification</h3>
+                    <a href="https://www.credly.com/badges/c53efc08-de5b-4fc5-82d5-8977dbc53161/public_url" target="_blank" class="text-accent-green hover:text-heading-color font-semibold transition-colors">View Credential &rarr;</a>
+                </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
         <section id="contact" class="bg-card-bg p-6 md:p-12 rounded-2xl shadow-lg mb-16 border border-border-color fade-in-up">
             <h2 class="text-3xl md:text-4xl font-bold mb-8 text-heading-color text-center">Contact Details</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
@@ -368,7 +351,6 @@
                     <span class="text-lg text-gray-300 font-medium">LeetCode</span>
                     <a href="https://leetcode.com/u/anubhav0306/" target="_blank" class="text-sm text-gray-400 hover:text-accent-green transition-colors">Anubhav0306</a>
                 </div>
-                <!-- Codeforces Link -->
                 <div class="flex flex-col items-center justify-center space-y-3">
                     <i class="fas fa-terminal text-accent-green text-3xl"></i>
                     <span class="text-lg text-gray-300 font-medium">Codeforces</span>
@@ -377,7 +359,6 @@
             </div>
         </section>
 
-        <!-- Footer -->
         <footer class="text-center py-8 mt-8 text-gray-500 text-sm">
             <p>&copy; 2025 Anubhav Chaudhary. All rights reserved.</p>
         </footer>
